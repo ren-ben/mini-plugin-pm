@@ -33,7 +33,7 @@ This is a test plugin, meaning I don't really intend it for the public use, the 
    
    7. Run start.bat again
 
-2. Download the .jar file here
+2. Download the .jar file
 
 # Basic Premise🪄
 
