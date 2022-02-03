@@ -57,4 +57,4 @@ Write `/message help` for in-game help
 
 # Acknowledgements🏆
 
-This project is actually a challenge from [This Course](https://www.udemy.com/course/develop-minecraft-plugins-java-programming/) on Udemy made by Stephen King, all credit for the initial idea goes to him, although I didn't look at the code he wrote and all the code that's located inside this plugin is my original code (except the ColorCode.translate() I yoinked that, sorry :P)
+This project is actually a challenge from [This Course](https://www.udemy.com/course/develop-minecraft-plugins-java-programming/) on Udemy made by Stephen King, all credit for the initial idea goes to him, although I didn't look at the code he wrote and all the code that's located inside this plugin is my original code (except the `ColorCode.translate()` I yoinked that, sorry :P)
