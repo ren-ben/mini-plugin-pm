@@ -1,0 +1,7 @@
+name: Pm
+version: '${project.version}'
+main: com.ren.pm.Main
+api-version: 1.18
+authors: [ ren ]
+description: A small Private Messaging Plugin for Minecraft
+website: github.com/ren-ben
