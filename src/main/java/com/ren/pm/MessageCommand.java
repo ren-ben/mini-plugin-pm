@@ -19,11 +19,15 @@ public class MessageCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
-            if(args.length == 2) {
+            if(args.length >= 2) {
                 if(Bukkit.getPlayer(args[0]) != null) {
+                    StringBuilder message = new StringBuilder();
                     Player target = Bukkit.getPlayer(args[0]);
                     assert target != null;
-                    target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() + ": " + ChatColor.RESET +  args[1]);
+                    for (int i = 1; i < args.length; i++) {
+                        message.append(args[i]).append(" ");
+                    }
+                    target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() + ": " + ChatColor.RESET +  message);
                     target.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§d§lA new message appeared!"));
                     reply_list.put(target.getPlayer(), player.getPlayer());
                 } else { //Error

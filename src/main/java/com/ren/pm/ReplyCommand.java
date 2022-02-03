@@ -13,10 +13,14 @@ public class ReplyCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
-            if(args.length == 1) {
+            if(args.length >= 1) {
                 if(MessageCommand.reply_list.get(player.getPlayer()) != null) {
+                    StringBuilder message = new StringBuilder();
                     Player target = MessageCommand.reply_list.get(player.getPlayer());
-                    target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() +  " Replied: " + ChatColor.RESET + args[0]);
+                    for (int i = 1; i < args.length; i++) {
+                        message.append(args[i]).append(" ");
+                    }
+                    target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() +  " replied: " + ChatColor.RESET + message);
                     target.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§d§lYou got a Reply!"));
                     MessageCommand.reply_list.remove(player.getPlayer());
                 } else {
