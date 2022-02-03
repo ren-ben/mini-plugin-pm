@@ -6,7 +6,7 @@
 
 # Description👀
 
-This is a test plugin, meaning I don't really intend it for the public use, the "Mini Plugin" series is for me to play around in both Spigot and Github. Though, feel free to download and test my Plugins! Even if it isn't intended for public use
+This is a test plugin, meaning I didn't really intend it for the public use, the "Mini Plugin" series is for me to play around in both Spigot and Github. Though, feel free to download and test my Plugins! Even if it isn't intended for public use
 
 # Requirements🔥
 
