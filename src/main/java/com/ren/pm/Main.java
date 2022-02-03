@@ -1,5 +1,7 @@
 package com.ren.pm;
 
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;

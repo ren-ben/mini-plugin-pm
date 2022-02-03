@@ -29,12 +29,17 @@ public class MessageCommand implements CommandExecutor {
                     }
                     target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() + ": " + ChatColor.RESET +  message);
                     target.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§d§lA new message appeared!"));
+                    player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§2§lMessage sent Successfully!"));
                     reply_list.put(target.getPlayer(), player.getPlayer());
                 } else { //Error
                     player.sendMessage(ColorCodes.translate(ColorCodes.player_not_found));
                 }
             } else { //Error
-                player.sendMessage(ColorCodes.translate(ColorCodes.message_error));
+                if(args.length == 1 && args[0].equalsIgnoreCase("help")) {
+                    player.sendMessage(ColorCodes.translate(ColorCodes.help));
+                } else {
+                    player.sendMessage(ColorCodes.translate(ColorCodes.message_error));
+                }
             }
         }
 

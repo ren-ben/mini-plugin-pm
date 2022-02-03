@@ -15,9 +15,14 @@ public class ColorCodes {
     public static String please_write = "#eb4034P#e83f3el#e53e48e#e23d52a#e03c5cs#dd3b67e #da3a71u#d7397bs#d43885e #d1378f/#cf3699r#cc34a3e#c933adp#c632b7l#c331c1y" +
             " #c030cc<#bd2fd6t#bb2ee0e#b82deax#b52cf4t#b22bfe>";
     
-    public static String didnt_get_message = "#eb4034Y#e93f3ao#e83f40u #e63e46d#e43d4ci#e23d53d#e13c59n#df3c5f'#dd3b65t #db3a6bg#da3a71e#d83977t #d6387da " +
-            "#d53884M#d3378ae#d13690s#cf3696s#ce359ca#cc35a2g#ca34a8e #c833aef#c733b5r#c532bbo#c331c1m #c231c7t#c030cdh#be2fd3i#bc2fd9s #" +
-            "bb2edfP#b92ee6l#b72deca#b52cf2y#b42cf8e#b22bfer";
+    public static String didnt_get_message = "#eb4034A#e73f41c#e43d4dt#e03c5ai#dd3b67o#d93973n " +
+            "#d63880n#d2378co#cf3699t #cb34a6a#c733b2l#c432bfl#c030cco#bd2fd8w#b92ee5e#b62cf1d#b22bfe!";
+    
+    public static String help = "#1f6afe/#2368fem#2766fee#2c65fes#3063fes#3461fea#385ffeg#3c5dfee #415cfe<#455afep#4958fel#4d56fea#5154fey#5653fee#5a" +
+            "51fer#5e4ffe> #624dfe<#664bfet#6b4afee#6f48fex#7346fet#7744fe> #7b42fe<#8041fe- #843ffeF#883dfeo#8c3bfer #9039fem#9538fe" +
+            "e#9936fes#9d34fes#a132fea#a530feg#aa2ffei#ae2dfen#b22bfeg" + "\n\n" + "#1f6afe/#2368fer#2866fee#2c64fep#3063fel#3561fey " +
+            "#395ffe<#3d5dfet#425bfee#4659fex#4a57fet#4f56fe> #5354fe<#5752fe- #5c50feF#604efeo#644cfer #694bfer#6d49f" +
+            "ee#7147fep#7545fel#7a43fey#7e41fei#823ffen#873efeg #8b3cfet#8f3afeo #9438fea #9836feM#9c34fee#a132fes#a531fes#a92ffea#ae2dfeg#b22bfee";
 
 //========================================================================================================================================================================
 

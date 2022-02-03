@@ -17,11 +17,12 @@ public class ReplyCommand implements CommandExecutor {
                 if(MessageCommand.reply_list.get(player.getPlayer()) != null) {
                     StringBuilder message = new StringBuilder();
                     Player target = MessageCommand.reply_list.get(player.getPlayer());
-                    for (int i = 1; i < args.length; i++) {
-                        message.append(args[i]).append(" ");
+                    for (String arg : args) {
+                        message.append(arg).append(" ");
                     }
                     target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() +  " replied: " + ChatColor.RESET + message);
                     target.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§d§lYou got a Reply!"));
+                    player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§2§lReply sent Successfully!"));
                     MessageCommand.reply_list.remove(player.getPlayer());
                 } else {
                     player.sendMessage(ColorCodes.translate(ColorCodes.didnt_get_message));
