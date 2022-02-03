@@ -34,6 +34,10 @@ This is a test plugin, meaning I didn't really intend it for the public use, the
    7. Run start.bat again
 
 2. Download the .jar file
+   
+3. Paste the jar file into the plugins Folder
+
+4. Run start.bat one more time
 
 # Basic Premise🪄
 
