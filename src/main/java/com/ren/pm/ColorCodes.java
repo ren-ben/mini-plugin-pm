@@ -11,9 +11,13 @@ public class ColorCodes {
             "#c123d5<#bf24dam#bd25dfe#bb26e4s#b927e9s#b828efa#b629f4g#b42af9e#b22bfe>";
     
     public static String player_not_found = "#fc0330P#f7063fl#f1094da#ec0c5cy#e70e6be#e2117ar #dc1488n#d71797o#d21aa6t #cc1db4f#c720c3o#c222d2u#bd25e1n#b728efd#b22bfe!";
+
+    public static String please_write = "#eb4034P#e83f3el#e53e48e#e23d52a#e03c5cs#dd3b67e #da3a71u#d7397bs#d43885e #d1378f/#cf3699r#cc34a3e#c933adp#c632b7l#c331c1y" +
+            " #c030cc<#bd2fd6t#bb2ee0e#b82deax#b52cf4t#b22bfe>";
     
-    public static String message_promt = "#1f6afeY#2866feo#3063feu #395ffeG#425bfeo#4a57fet #5354feA " +
-            "#5c50feN#644cfee#6d49few #7545feM#7e41fee#873efes#8f3afes#9836fea#a132feg#a92ffee#b22bfe!";
+    public static String didnt_get_message = "#eb4034Y#e93f3ao#e83f40u #e63e46d#e43d4ci#e23d53d#e13c59n#df3c5f'#dd3b65t #db3a6bg#da3a71e#d83977t #d6387da " +
+            "#d53884M#d3378ae#d13690s#cf3696s#ce359ca#cc35a2g#ca34a8e #c833aef#c733b5r#c532bbo#c331c1m #c231c7t#c030cdh#be2fd3i#bc2fd9s #" +
+            "bb2edfP#b92ee6l#b72deca#b52cf2y#b42cf8e#b22bfer";
 
 //========================================================================================================================================================================
 

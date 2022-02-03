@@ -8,3 +8,5 @@ website: github.com/ren-ben
 commands:
   message:
     description: Message another player!
+  reply:
+    description: Reply to the Messages you receive!

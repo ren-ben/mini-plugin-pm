@@ -9,5 +9,6 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         Objects.requireNonNull(getCommand("message")).setExecutor(new MessageCommand());
+        Objects.requireNonNull(getCommand("reply")).setExecutor(new ReplyCommand());
     }
 }

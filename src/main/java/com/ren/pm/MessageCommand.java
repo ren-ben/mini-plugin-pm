@@ -9,7 +9,12 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.HashMap;
+
 public class MessageCommand implements CommandExecutor {
+
+    public static HashMap<Player, Player> reply_list = new HashMap<>();
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
@@ -18,8 +23,9 @@ public class MessageCommand implements CommandExecutor {
                 if(Bukkit.getPlayer(args[0]) != null) {
                     Player target = Bukkit.getPlayer(args[0]);
                     assert target != null;
-                    target.sendMessage(ChatColor.GREEN + player.getDisplayName() + ": " + args[1]);
+                    target.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + player.getDisplayName() + ": " + ChatColor.RESET +  args[1]);
                     target.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§d§lA new message appeared!"));
+                    reply_list.put(target.getPlayer(), player.getPlayer());
                 } else { //Error
                     player.sendMessage(ColorCodes.translate(ColorCodes.player_not_found));
                 }
