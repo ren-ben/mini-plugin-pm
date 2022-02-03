@@ -2,7 +2,7 @@
 <img title="" src="https://img.icons8.com/nolan/512/love-message.png" alt="" width="225" data-align="center">
 
 <p align="center">
-<b>Project PM </b> is a Private Messaging system Test Plugin
+<b>Project PM </b> is a Private Messaging system Mini-Plugin
 
 # Description👀
 
